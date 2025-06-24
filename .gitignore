@@ -1,0 +1,11 @@
+AppData/
+Cookies/
+*.log
+*.tmp
+*.bak
+Thumbs.db
+Desktop.ini
+node_modules/
+bin/
+obj/
+.nuget/
