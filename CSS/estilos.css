@@ -21,15 +21,15 @@ nav a:hover {
 }
 
 h1 {
-    color: #333;
-    padding: 20px;
+  color: #333;
+  padding: 20px;
 }
 
 ul {
     list-style-type: square;
 }
 
-ul li {
+ul li{
     margin-top: 10px;
 }
 
@@ -44,67 +44,85 @@ a:hover {
 
 /* Diseño responsivo */
 @media (max-width: 600px) {
-    nav {
-        padding: 10px;
-        text-align: center;
-    }
+  nav {
+    padding: 10px;
+    text-align: center;
+  }
 
-    nav a {
-        display: block;
-        margin: 5px 0;
-    }
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
 
-    h1, h2 {
-        font-size: 24px;
-        text-align: center;
-    }
+  h1, h2 {
+    font-size: 24px;
+    text-align: center;
+  }
 
-    ul {
-        padding: 10px;
-    }
+  ul {
+    padding: 10px;
+  }
 
-    ul li {
-        font-size: 18px;
-    }
+  ul li {
+    font-size: 18px;
+  }
+
+  /* Ajustes para bloques de contenido */
+  .bloque-ahorro,
+  .lista-partituras {
+    max-width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  /* Para que el flex no comprima el textarea en móvil */
+  .nota-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nota-item textarea {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .nota-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .nota-item label {
-    margin-right: 10px;
-    font-weight: bold;
-    color: #856404;
-    width: 60px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #856404;
+  width: 60px;
 }
 
 .nota-item textarea {
-    flex: 1;
-    padding: 5px;
-    border: 1px solid #000000;
-    background-color: #fff8e1;
-    border-radius: 5px;
-    margin-right: 10px;
-    resize: vertical;
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #000000;
+  background-color: #fff8e1;
+  border-radius: 5px;
+  margin-right: 10px;
+  resize: vertical;
 }
 
 .nota-item button {
-    padding: 6px 12px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .nota-item button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 h2 {
@@ -114,253 +132,226 @@ h2 {
     display: inline-block;
 }
 
-h2:hover {
+h2:hover{
     transform: translateY(-2px);
     text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 
 .bloque-notas {
-    background: linear-gradient(135deg, #fff9e6, #fff3cd);
-    border: 2px dashed #ffeeba;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 700px;
-    border-radius: 20px;
-    box-shadow: inset 0 0 8px rgba(255, 255, 240, 0.6), 4px 4px 12px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #fff9e6, #fff3cd);
+  border: 2px dashed #ffeeba;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 8px rgba(255, 255, 240, 0.6), 4px 4px 12px rgba(0,0,0,0.1);
 }
 
 .bloque-ahorro {
-    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
-    border: 2px solid #a5d6a7;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 700px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  border: 2px solid #a5d6a7;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
 
 .bloque-ahorro input[type="text"],
 .bloque-ahorro input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    border: 1px solid #388e3c;
-    border-radius: 8px;
-    background-color: #f1f8e9;
-    font-size: 16px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #388e3c;
+  border-radius: 8px;
+  background-color: #f1f8e9;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 .bloque-ahorro input[type="text"]:focus,
 .bloque-ahorro input[type="number"]:focus {
-    outline: none;
-    border-color: #2e7d32;
-    background-color: #ffffff;
+  outline: none;
+  border-color: #2e7d32;
+  background-color: #ffffff;
 }
 
 .inicio-header {
-    text-align: center;
-    padding: 40px 20px 20px;
-    background: linear-gradient(135deg, #fffbeb, #fff3cd);
-    border-radius: 15px;
-    max-width: 700px;
-    margin: 20px auto;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 40px 20px 20px;
+  background: linear-gradient(135deg, #fffbeb, #fff3cd);
+  border-radius: 15px;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
 }
 
 .inicio-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: #856404;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #856404;
 }
 
 .inicio-header p {
-    font-size: 18px;
-    color: #6c757d;
+  font-size: 18px;
+  color: #6c757d;
 }
 
 .inicio-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 700px;
-    margin: 30px auto;
-    padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 10px;
 }
 
 .menu-tarjeta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 140px;
-    height: 140px;
-    background: linear-gradient(135deg, #fff9e6, #fff3cd);
-    border: 2px solid #ffeeba;
-    border-radius: 20px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
-    font-size: 24px;
-    text-decoration: none;
-    color: #856404;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(135deg, #fff9e6, #fff3cd);
+  border: 2px solid #ffeeba;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+  font-size: 24px;
+  text-decoration: none;
+  color: #856404;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .menu-tarjeta:hover {
-    background: linear-gradient(135deg, #ffeeba, #fff9e6);
-    transform: scale(1.05);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #ffeeba, #fff9e6);
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
 }
 
-/* Responsive para menú y encabezados */
+/* Responsive */
 @media (max-width: 600px) {
-    .inicio-menu {
-        gap: 15px;
-    }
+  .inicio-menu {
+    gap: 15px;
+  }
 
-    .menu-tarjeta {
-        width: 120px;
-        height: 120px;
-        font-size: 20px;
-    }
+  .menu-tarjeta {
+    width: 120px;
+    height: 120px;
+    font-size: 20px;
+  }
 
-    .inicio-header h1 {
-        font-size: 28px;
-    }
+  .inicio-header h1 {
+    font-size: 28px;
+  }
 
-    .inicio-header p {
-        font-size: 16px;
-    }
+  .inicio-header p {
+    font-size: 16px;
+  }
 }
 
-/* Lista de partituras */
 .lista-partituras {
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 10px;
-    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
-    border-radius: 15px;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 10px;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  border-radius: 15px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
 }
 
 .lista-partituras ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .lista-partituras li {
-    background-color: #ffffff;
-    margin-bottom: 12px;
-    border-radius: 10px;
-    padding: 15px 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #ffffff;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .lista-partituras li:hover {
-    transform: translateX(8px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transform: translateX(8px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 .lista-partituras a {
-    text-decoration: none;
-    color: #006064;
-    font-weight: 600;
-    font-size: 18px;
-    display: block;
+  text-decoration: none;
+  color: #006064;
+  font-weight: 600;
+  font-size: 18px;
+  display: block;
 }
 
 .lista-partituras a:hover {
-    text-decoration: underline;
-    color: #004d40;
+  text-decoration: underline;
+  color: #004d40;
 }
 
-/* Lista de canciones */
+/* Responsive */
+@media (max-width: 600px) {
+  .lista-partituras li {
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+}
+
+/* Estilos para la lista de canciones */
 .lista-canciones {
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 10px;
-    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
-    border-radius: 15px;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 10px;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  border-radius: 15px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
 }
 
 .lista-canciones ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .lista-canciones li {
-    background-color: #ffffff;
-    margin-bottom: 0; /* Ya hay gap en flex */
-    border-radius: 15px;
-    padding: 15px 20px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #ffffff;
+  margin-bottom: 0; /* Ya hay gap en flex */
+  border-radius: 15px;
+  padding: 15px 20px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .lista-canciones li:hover {
-    transform: translateX(10px);
-    box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
+  transform: translateX(10px);
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
 }
 
 .lista-canciones a {
-    text-decoration: none;
-    color: #0077cc;
-    font-weight: 600;
-    font-size: 18px;
-    display: block;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 600;
+  font-size: 18px;
+  display: block;
 }
 
 .lista-canciones a:hover {
-    text-decoration: underline;
-    color: #005fa3;
+  text-decoration: underline;
+  color: #005fa3;
 }
 
-/* Responsive general para móviles */
+/* Responsive */
 @media (max-width: 600px) {
-    nav {
-        padding: 10px;
-        text-align: center;
-    }
-
-    nav a {
-        display: block;
-        margin: 5px 0;
-    }
-
-    h1, h2 {
-        font-size: 24px;
-        text-align: center;
-    }
-
-    ul {
-        padding: 10px;
-    }
-
-    ul li {
-        font-size: 18px;
-    }
-
-    /* Ajustes específicos para bloques */
-    .bloque-ahorro,
-    .bloque-notas,
-    .lista-partituras,
-    .lista-canciones {
-        max-width: 90%;
-        margin: 20px auto;
-        padding: 15px;
-    }
-
-    .lista-partituras li,
-    .lista-canciones li {
-        padding: 12px 15px;
-        font-size: 16px;
-    }
+  .lista-canciones li {
+    padding: 12px 15px;
+    font-size: 16px;
+  }
 }
