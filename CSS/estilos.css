@@ -256,7 +256,7 @@ h2:hover{
   max-width: 700px;
   margin: 20px auto;
   padding: 10px;
-  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  background: linear-gradient(135deg, #fff9e6, #fff3cd);
   border-radius: 15px;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
 }
@@ -307,7 +307,7 @@ h2:hover{
   max-width: 700px;
   margin: 20px auto;
   padding: 10px;
-  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  background: linear-gradient(135deg, #fff9e6, #fff3cd);
   border-radius: 15px;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
 }
